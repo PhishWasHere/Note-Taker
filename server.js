@@ -14,7 +14,7 @@ const PORT = 3001;
 // Static middleware pointing to the public folder
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use('/api', api);
+
 app.use(express.static('public'));
 
 // Create Express.js routes for default '/', '/send' and '/routes' endpoints
